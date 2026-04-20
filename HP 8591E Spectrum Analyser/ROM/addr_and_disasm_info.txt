@@ -1,0 +1,39 @@
+Hi Tom,
+ 
+Right - a string would be distributed over two chips.
+ 
+Using version 980615 as an example, it resides in 4x 256kB EPROMs.
+It's laid out like this:
+ 
+  U7  - even addresses from 0x000000 to 0x07fffe
+  U24 - odd addresses from 0x000001 to 0x07ffff
+  U6  - even addresses from 0x080000 to 0x0ffffe
+  U23 - odd addresses from 0x080001 to 0x0fffff
+ 
+So, to put the binary back together and have sensible strings, you
+need to re-shuffle the EPROMs back together.
+ 
+The MBRD command shows the EPROMs as contiguous bytes since the
+hardware has already taken care of the even/odd and the banking.
+ 
+If you are interested, there is a Linux utility called "srec" which
+can re-shuffle even and odd EPROM images and turn them into a
+contiguous image.  Here is an example using someone's hex images of
+the 980615 EPROMs (I think I got them from KO4BB):
+ 
+  srec_cat \
+    8590-u7.hex -intel -unsplit 2 1 \
+    8590-u24.hex -intel -unsplit 2 0 \
+    8590-u6.hex -intel -unsplit 2 1 -offset 524288 \
+    8590-u23.hex -intel -unsplit 2 0 -offset 524288 \
+    -output all.bin -binary
+ 
+Great - glad the utility is working for you!
+ 
+Did you have any problems when reading the very high area of SRAM?
+Using MBRD on some SRAM sections caused my analyzer to lock up.
+ 
+-mark
+ 
+ 
+On Sat, Feb 8, 2025 at 09:39 AM, tom_iphi wrote:

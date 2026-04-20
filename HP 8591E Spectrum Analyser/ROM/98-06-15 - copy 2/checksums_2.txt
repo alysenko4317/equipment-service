@@ -1,0 +1,48 @@
+=== Hash calculation for *.bin files ===
+
+File: u23.bin
+  MD5:
+MD5 hash of u23.bin:
+ca6a0057a1f3782b2682c50f967312f5
+  SHA1:
+SHA1 hash of u23.bin:
+4113524578d56ee2cffedb20f81dcbf9e9b0b9f4
+  SHA256:
+SHA256 hash of u23.bin:
+5ff08bc4bcb86576f182f6db4466fb970a2eb8b006162d0ab3418a84f6a6cf21
+
+File: u24.bin
+  MD5:
+MD5 hash of u24.bin:
+0b11704fe6a522ea74dad13f966a8b96
+  SHA1:
+SHA1 hash of u24.bin:
+10cc6ad77e8d0053e1e8d75dbce46d6b8e276def
+  SHA256:
+SHA256 hash of u24.bin:
+13c43171f30a9d8013b6e3eb2e36fea47ac498dafb01fe7a7da3958fb72d0f73
+
+File: u6.bin
+  MD5:
+MD5 hash of u6.bin:
+8ce33a8056d244e2a780d6e935f64a3c
+  SHA1:
+SHA1 hash of u6.bin:
+1a80cdd360fae29fbe6dcfc600fc5b42edfd62d6
+  SHA256:
+SHA256 hash of u6.bin:
+898d90d41733e2583656e8228397783ae8c81fc796379a705e52ad423713c419
+
+File: u7.bin
+  MD5:
+MD5 hash of u7.bin:
+e91365ad5bd8ccb27be93f50ab8fd58d
+  SHA1:
+SHA1 hash of u7.bin:
+8ae0ebf417c4e19f78284a7898f7c17d3f7e1716
+  SHA256:
+SHA256 hash of u7.bin:
+f74a1e3d89e42be7c8c2d713ae49f7aecbe7ee00bdb5183f8feb6628c5d8f844
+
+Done.
+Press any key to continue . . . 
